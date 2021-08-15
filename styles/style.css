@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu-list {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding-right: 8px;
+    padding-top: 5px;
+}
+
+.menu-item {
+    padding: 10px;
+    font-size: 13px;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: rgba(0,0,0,0.87);
+}
+
+.menu-item .user-photo {
+    border-radius: 50%;
+}
+
+main {
+    padding-top: 10%;
+    display: grid;
+}
+
+.center-aligned {
+    margin: 0 auto;
+}
+
+.google-logo {
+    display: block;
+}
+
+.google-input { 
+    border: none;
+    width: 90%;
+    height: 80%;
+}
+
+.google-search-icon {
+    display: block;
+    margin-left: 10px;
+}
+
+.google-form-input {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 30vw;
+    height: 2.5vw;
+    border-radius: 100px;
+    border: 1px solid #dfe1e5;
+}
+
+.offered-languages {
+    list-style-type: none;
+    display: flex;
+}
+
+.offered-languages > li {
+    padding: 0 5px 0 5px;
+}
+
+.google-language-offers {
+    display: flex;
+}
