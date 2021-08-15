@@ -125,6 +125,10 @@ main {
     text-decoration: none;
 }
 
+.offered-languages > li > a:hover {
+    text-decoration: underline;
+}
+
 .google-language-offers {
     font-size: 12px;
     display: flex;
