@@ -13,12 +13,13 @@
     <header>
         <nav class="menu">
             <ul class="menu-list">
-                <li class="menu-item"><a href="#">Gmail</a></li>
-                <li class="menu-item"><a href="#">Images</a></li>
-                <li class="menu-item"><a href="#"><img class="apps" src="images/apps_24.svg"
+                <li class="menu-item"><a class="hover-underlined" href="#">Gmail</a></li>
+                <li class="menu-item"><a class="hover-underlined" href="#">Images</a></li>
+                <li class="menu-item"><a href="#"><img class="apps round-shadowed" src="images/apps_24.svg"
                             alt="google apps exploration icon"></a>
                 </li>
-                <li class="menu-item"><a href="#"><img class="user-photo" src="images/user_photo_32x32.png"
+                <li class="menu-item"><a href="https://github.com/soloVlad" target="_blank"><img
+                            class="user-photo round-shadowed" src="images/user_photo_32x32.png"
                             alt="user's google account photo"></a></li>
             </ul>
         </nav>
@@ -32,8 +33,8 @@
         </form>
 
         <div class="google-buttons center-aligned">
-            <input type="submit" value="Google Search">
-            <input type="submit" value="I'm Feeling Lucky">
+            <input class="google-buttons-item" type="submit" value="Google Search">
+            <input class="google-buttons-item" type="submit" value="I'm Feeling Lucky">
         </div>
 
         <div class="google-language-offers center-aligned">
@@ -47,23 +48,25 @@
     </main>
 
     <footer>
-        <p>Belarus</p>
-        <nav>
-            <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Advertising</a></li>
-                <li><a href="#">Business</a></li>
-                <li><a href="#">How Search works</a></li>
-            </ul>
-        </nav>
+        <div class="upper-footer">Belarus</div>
+        <div class="bottom-footer">
+            <nav class="footer-info">
+                <ul class="footer-info-list">
+                    <li><a class="hover-underlined" href="#">About</a></li>
+                    <li><a class="hover-underlined" href="#">Advertising</a></li>
+                    <li><a class="hover-underlined" href="#">Business</a></li>
+                    <li><a class="hover-underlined" href="#">How Search works</a></li>
+                </ul>
+            </nav>
 
-        <nav>
-            <ul>
-                <li><a href="#">Privacy</a></li>
-                <li><a href="#">Terms</a></li>
-                <li><a href="#">Settings</a></li>
-            </ul>
-        </nav>
+            <nav class="footer-settings">
+                <ul class="footer-settings-list">
+                    <li><a class="hover-underlined" href="#">Privacy</a></li>
+                    <li><a class="hover-underlined" href="#">Terms</a></li>
+                    <li><a class="hover-underlined" href="#">Settings</a></li>
+                </ul>
+            </nav>
+        </div>
     </footer>
 
 </body>

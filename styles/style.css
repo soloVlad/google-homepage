@@ -5,6 +5,11 @@
     font-family: Arial, sans-serif;
 }
 
+body {
+    position: relative;
+    height: 100vh;
+}
+
 .menu {
     display: flex;
     justify-content: flex-end;
@@ -28,6 +33,14 @@
     color: rgba(0,0,0,0.87);
 }
 
+.hover-underlined:hover {
+    text-decoration: underline;
+}
+
+.round-shadowed:hover {
+    box-shadow: 0px 0px 0px 5px rgba(60,64,67,0.08);
+}
+
 .menu-item .user-photo {
     border-radius: 50%;
 }
@@ -46,9 +59,16 @@ main {
 }
 
 .google-input { 
+    color: rgba(0,0,0,.87);
+    font-size: 16px;
     border: none;
     width: 90%;
     height: 80%;
+}
+
+.google-input:active, .google-input:focus {
+    border: none;
+    outline: none;
 }
 
 .google-search-icon {
@@ -67,6 +87,31 @@ main {
     border: 1px solid #dfe1e5;
 }
 
+.google-form-input:hover {
+    box-shadow: 0px 2px 5px 4px rgba(60,64,67,0.1);
+}
+
+.google-buttons {
+    margin-top: 30px;
+}
+
+.google-buttons-item {
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #f8f9fa;
+    border: none;
+    color: #202124;
+    border: 1px solid #f8f9fa;
+}
+
+.google-buttons-item:hover {
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+    cursor: pointer;
+}
 .offered-languages {
     list-style-type: none;
     display: flex;
@@ -76,6 +121,59 @@ main {
     padding: 0 5px 0 5px;
 }
 
+.offered-languages > li > a {
+    text-decoration: none;
+}
+
 .google-language-offers {
+    font-size: 12px;
     display: flex;
+    margin-top: 30px;
+}
+
+
+footer {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #f2f2f2;
+}
+
+.upper-footer {
+    border-bottom: 1px solid #dadce0;
+    font-size: 15px;
+    color: rgba(0,0,0,.54);
+    padding: 15px 30px;
+}
+
+footer nav a {
+    text-decoration: none;
+    font-size: 14px;
+    color: rgba(0,0,0,.54);
+}
+
+.footer-info-list {
+    display: flex;
+    list-style-type: none;
+}
+
+.footer-info-list > li {
+    padding: 15px;
+}
+
+.footer-settings-list {
+    list-style-type: none;
+    display: flex;
+}
+
+.footer-settings-list > li {
+    padding: 15px;
+}
+
+.bottom-footer {
+    padding: 0 15px 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
